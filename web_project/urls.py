@@ -21,11 +21,11 @@ from django.urls import path
 
 from django.urls import path, include
 from shop.views import greetings, cat_fact
+from shop.models import Purchase
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('greeting/', greetings, name='greeting'),
-    path('facts/', cat_fact, name='cat_fact'),
+    path('shop/', include('shop.urls')),
 ]
 
 

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item Detail</title>
+</head>
+<body>
+    <h1>Item Detail</h1>
+    {% if item %}
+        <p><strong>Name:</strong> {{ item.name }}</p>
+        <p><strong>Price:</strong> {{ item.price }}</p>
+        <!-- Добавьте любые другие поля, которые вы хотите отобразить -->
+    {% else %}
+        <p>Item not found</p>
+    {% endif %}
+</body>
+</html>
